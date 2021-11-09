@@ -1,0 +1,46 @@
+.skills {
+    display: flex;
+    margin: 100px 0;
+    &__example {
+        width: 50%;
+        background-image: url("./img/skills.jpg");
+    }
+    &__caption {
+        text-transform: uppercase;
+    }
+}
+.scale {
+    width: 50%;
+    background-color: #fff;
+    padding: 80px 100px;
+    &__item {
+        margin: 25px 0;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    &__visual {
+        position: relative;
+        height: 5px;
+        background-color: #e9e9e9;
+        grid-column: 1/3;
+    }
+    &__line {
+        position: absolute;
+        background-color: $navy;
+        height: 100%;
+        &--width--1 {
+            width: 75%;
+        }
+        &--width--2 {
+            width: 90%;
+        }
+        &--width--3 {
+            width: 60%;
+        }
+    }
+    &__caption {
+        align-self: center;
+        font-weight: bold;
+    }
+}
