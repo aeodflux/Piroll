@@ -8,6 +8,8 @@
 @import "process";
 @import "footer";
 @import "services";
+@import "slogan";
+@import "sponsors";
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -17,9 +19,6 @@ body {
     background-color: #fff;
     margin: 0;
     padding: 0;
-}
-.heading {
-    font-size: 30px;
 }
 .caption {
     font-size: 12px;
