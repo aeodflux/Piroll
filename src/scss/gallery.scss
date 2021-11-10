@@ -1,0 +1,42 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        width: 25%;
+        height: 300px;
+        &_order {
+            &_1 {
+                //background-image: url();
+                background-color: #fff;
+            }
+            &_2 {
+                //background-image: url();
+                background-color: $navy;
+            }
+            &_3 {
+                //background-image: url();
+                background-color: gray;
+            }
+            &_4 {
+                //background-image: url();
+                background-color: #fff;
+            }
+            &_5 {
+                //background-image: url();
+                background-color: $navy;
+            }
+            &_6 {
+                //background-image: url();
+                background-color: gray;
+            }
+            &_7 {
+                //background-image: url();
+                background-color: #fff;
+            }
+            &_8 {
+                //background-image: url();
+                background-color: $navy;
+            }
+        }
+    }
+}
