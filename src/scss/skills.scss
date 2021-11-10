@@ -29,14 +29,16 @@
         position: absolute;
         background-color: $navy;
         height: 100%;
-        &--width--1 {
-            width: 75%;
-        }
-        &--width--2 {
-            width: 90%;
-        }
-        &--width--3 {
-            width: 60%;
+        &_width {
+            &_1 {
+                width: 75%;
+            }
+            &_2 {
+                width: 90%;
+            }
+            &_3 {
+                width: 60%;
+            }
         }
     }
     &__caption {

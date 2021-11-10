@@ -4,8 +4,39 @@
     padding: 100px;
     &__container {
         display: flex;
+        justify-content: space-between;
     }
     &__item {
         display: flex;
+        color: white;
+        font-size: 12px;
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        align-self: center;
+        margin-right: 30px;
+        &_order {
+            &_1 {
+                background-image: url("../img/stat1.png");
+            }
+            &_2 {
+                background-image: url("../img/stat2.png");
+            }
+            &_3 {
+                background-image: url("../img/stat3.png");
+            }
+            &_4 {
+                background-image: url("../img/stat4.png");
+            }
+        }
+    }
+    &__amount {
+        font-size: 12px;
+    }
+    &__caption {
+        text-transform: uppercase;
+        font-size: 12px;
     }
 }
