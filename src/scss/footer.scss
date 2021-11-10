@@ -1,0 +1,22 @@
+.footer {
+    background-color: black;
+    padding: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    line-height: 1.5;
+    &__item {
+        margin: 0 auto;
+        width: fit-content;
+        font-size: 15px;
+        max-width: 350px;
+    }
+    &__heading {
+        color: gray;
+        font-size: 18px;
+    }
+    &__links {
+        max-width: 200px;
+    }
+}
