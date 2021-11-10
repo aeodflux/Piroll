@@ -5,6 +5,7 @@
 @import "skills";
 @import "statistics";
 @import "gallery";
+@import "process";
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -28,4 +29,7 @@ body {
     &--active {
         color: white;
     }
+}
+.text {
+    font-size: 18px;
 }

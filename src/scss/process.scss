@@ -1,0 +1,29 @@
+.process {
+    padding: 100px;
+    &__video {
+        position: relative;
+        width: 1180px;
+        height: 570px;
+        background-color: #ededed;
+        margin: 0 auto;
+        &::after {
+            // width: 80px;
+            // height: 80px;
+            content: url("../img/videosign.png");
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+    }
+}
+.description {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    &__text {
+        max-width: 475px;
+        color: gray;
+        margin: 0 auto;
+    }
+}
