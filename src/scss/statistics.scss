@@ -1,0 +1,11 @@
+.statistics {
+    width: 100%;
+    background-color: $navy;
+    padding: 100px;
+    &__container {
+        display: flex;
+    }
+    &__item {
+        display: flex;
+    }
+}
