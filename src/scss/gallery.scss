@@ -4,7 +4,7 @@
     &__item {
         width: 25%;
         height: 300px;
-        &_order {
+        &_order { //TODO: replace bg images
             &_1 {
                 //background-image: url();
                 background-color: #fff;
@@ -15,7 +15,7 @@
             }
             &_3 {
                 //background-image: url();
-                background-color: gray;
+                background-color: #e9e9e9;
             }
             &_4 {
                 //background-image: url();
@@ -27,7 +27,7 @@
             }
             &_6 {
                 //background-image: url();
-                background-color: gray;
+                background-color: #e9e9e9;
             }
             &_7 {
                 //background-image: url();
@@ -38,5 +38,13 @@
                 background-color: $navy;
             }
         }
+    }
+    &__extension {
+        background-color: #e9e9e9;
+        text-transform: uppercase;
+        color: gray;
+        text-align: center;
+        padding: 45px;
+        font-size: 12px;
     }
 }

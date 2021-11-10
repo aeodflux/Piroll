@@ -2,4 +2,10 @@
     margin: 100px auto;
     text-align: center;
     max-width: 600px;
+    &__signature {
+        background-image: url("../img/signature.png");
+        width: 223px;
+        height: 57px;
+        margin: 0 auto;
+    }
 }
