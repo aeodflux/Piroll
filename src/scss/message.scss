@@ -24,18 +24,9 @@
         background-color: #fff; 
         margin: 12px;
         padding: 20px;
-        ::-webkit-input-placeholder { /* WebKit browsers */
-            color:    gray;
-         }
-         :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-            color:    gray;
-         }
-         ::-moz-placeholder { /* Mozilla Firefox 19+ */
-            color:    gray;
-         }
-         :-ms-input-placeholder { /* Internet Explorer 10+ */
-            color:    gray;
-         }
+        ::placeholder {
+            color:gray;
+        }
         &_order {
             &_1 {
                 grid-row: 1/1;
@@ -72,7 +63,11 @@
         border: none;
         cursor: pointer;
         &:active {
-            outline: black auto 5px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        &:hover {
+            color: rgba(255, 255, 255, 0.5);
+            transition: 0.3s;
         }
     }
 }

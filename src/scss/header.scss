@@ -17,10 +17,6 @@
     padding-top: 35px;
     margin-top: 0;
     margin-bottom: 0;
-    &__logo {
-        list-style: none;
-        padding: 0;
-    }
     &__menu {
         display: flex;
         justify-content: space-around;
@@ -29,11 +25,32 @@
         padding: 0;
     }
     &__item {
-        margin-right: 25px;
+        margin-right: 10px;
         text-transform: uppercase;
+        &:focus-within {
+            outline: none;
+            opacity: 50%;
+        }
+        &:hover {
+            opacity: 50%;
+            transition: 0.2s;
+        }
     }
     &__link {
+        padding: 5px;
         color: black;
+        &:focus {
+            outline: none;
+            opacity: 50%;
+        }
+        &:hover {
+            opacity: 50%;
+            transition: 0.2s;
+        }
+    }
+    &__logo {
+        list-style: none;
+        padding: 0;
     }
 }
 
@@ -61,6 +78,10 @@
         margin-top: 20px;
         &:enabled {
             outline: black auto 5px;
+        }
+        &:hover {
+            color: rgba(255, 255, 255, 0.5);
+            transition: 0.3s;
         }
     }
 }

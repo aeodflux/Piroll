@@ -16,7 +16,14 @@
         color: gray;
         font-size: 18px;
     }
-    &__links {
+    &__contacts {
         max-width: 200px;
+    }
+    &__link {
+        color: gray;
+        text-decoration: none;
+        &:hover {
+            color: $navy;
+        }
     }
 }
