@@ -17,6 +17,7 @@
         grid-template-rows: 1fr 1fr 200px;
     }
     &__area {
+        resize: none;
         border: none;
         text-align: left;
         color: rgb(0, 0, 0);
