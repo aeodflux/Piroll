@@ -27,7 +27,7 @@ body {
 .link {
     text-decoration: none;
     &--active {
-        color: white;
+        color: $navy;
         &:focus {
             opacity: 70%;
         }

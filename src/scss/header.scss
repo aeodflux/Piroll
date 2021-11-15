@@ -13,16 +13,23 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    margin: 95px;
-    padding-top: 35px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     &__menu {
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         list-style: none;
         padding: 0;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        max-width: 800px;
+        margin: 0 auto;
     }
     &__item {
         margin-right: 10px;
