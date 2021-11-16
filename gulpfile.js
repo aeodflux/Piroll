@@ -20,7 +20,7 @@ const scss = () => src('src/scss/style.scss')
   .pipe(autoprefixer())
   .pipe(csso())
   .pipe(dest('dist'))
-const scripts = () => src(['node_modules/nouislider/dist/nouislider.js', 'src/js/script.js'])
+const scripts = () => src('src/js/script.js')
   .pipe(concat('script.js')) //TODO: minify
   .pipe(dest('dist'));
 const serve = () => {
@@ -30,13 +30,13 @@ const serve = () => {
 
   watch('src/**.html', series(html)).on('change', sync.reload)
   watch('src/scss/**scss', series(scss)).on('change', sync.reload)
-  // watch('src/js/**.js', series(scripts)).on('change', sync.reload)
+  watch('src/js/**.js', series(scripts)).on('change', sync.reload)
   watch('src/img/*.*', series(imgs)).on('change', sync.reload)
 }
 
 
-const build = gulp.series(clear, html, imgs, scss);
+const build = gulp.series(clear, html, scripts, imgs, scss);
 
-exports.default = gulp.series(clear, scss, html, imgs, serve)
+exports.default = gulp.series(clear, scss, html, scripts, imgs, serve)
 exports.build = build
 exports.clear = clear

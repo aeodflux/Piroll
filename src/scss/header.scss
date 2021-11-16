@@ -1,7 +1,34 @@
+@keyframes buildslide {
+    from {
+      left: 0;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+
+
+
+
+
 .header {
-    background-image: url('./img/header_bg1.jpg'); //TODO: replace bg image
+    background-image: url('./img/header_bg.png'); //TODO: replace bg image
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: left;
+    position: relative;
+    &__background {
+        &_order {
+            &_1 {
+                position: absolute;
+                width: 100%;
+                height: 340px;
+                background-color: $navy;
+                top: 85px;
+                z-index: -1;
+            }
+        }
+    }
 }
 
 .logo {
@@ -15,10 +42,7 @@
     justify-content: space-between;
     margin: 0 auto;
     background-color: white;
-    border: 1px solid black;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+    border: none;
     &__menu {
         width: 100%;
         display: flex;

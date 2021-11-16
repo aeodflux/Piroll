@@ -6,14 +6,21 @@
         height: 570px;
         background-color: #ededed;
         margin: 0 auto;
-        &::after {
-            // width: 80px;
-            // height: 80px;
-            content: url("./img/videosign.png");
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%)
+    }
+    &__button {
+        background-image: url("./img/videosign.png");
+        width: 85px;
+        height: 85px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        &_enabled {
+            display: block;
+        }
+        &_disabled {
+            display: none;
         }
     }
 }

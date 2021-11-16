@@ -24,11 +24,13 @@
         height: 5px;
         background-color: #e9e9e9;
         grid-column: 1/3;
+        border-radius: 10px;
     }
     &__line {
         position: absolute;
         background-color: $navy;
         height: 100%;
+        border-radius: 10px;
         &_width {
             &_1 {
                 width: 75%;
