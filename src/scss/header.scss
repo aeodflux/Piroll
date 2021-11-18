@@ -13,22 +13,11 @@
 
 
 .header {
-    background-image: url('./img/header_bg.png'); //TODO: replace bg image
+ //TODO: replace bg image
+    background-color: #e9e9e9;
     background-repeat: no-repeat;
     background-position-x: left;
     position: relative;
-    &__background {
-        &_order {
-            &_1 {
-                position: absolute;
-                width: 100%;
-                height: 432px;
-                background-color: $navy;
-                top: 85px;
-                z-index: -1;
-            }
-        }
-    }
 }
 
 .logo {
@@ -94,15 +83,15 @@
     }
     &__text {
         max-width: 480px;
-        color: #ededed;
+        color: #808080;
         font-size: 18px;
     }
     &__link {
         text-transform: uppercase;
         font-size: 12px;
         text-align: center;
-        background-color: white;
-        color: $navy;
+        background-color: $navy;
+        color: white;
         padding: 20px 30px;
         display: block;
         width: fit-content;
