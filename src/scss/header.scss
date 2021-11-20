@@ -19,7 +19,13 @@
     background-position-x: left;
     position: relative;
 }
-
+.home__header {
+    .nav {
+        &__menu {
+            max-width: 400px;
+        }
+    }
+}
 .logo {
     width: 31px;
     height: 25px;
