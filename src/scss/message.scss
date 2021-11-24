@@ -8,8 +8,11 @@
         text-align: center;
     }
     &__heading {
-        margin-bottom: 45px;
+        margin-bottom: 20px;
         margin-top: 0;
+    }
+    &__text {
+        margin-bottom: 20px;
     }
     &__form {
         display: grid;

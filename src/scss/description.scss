@@ -1,6 +1,13 @@
+
 .description {
-    padding: 95px;
-    margin-bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    &__text {
+        max-width: 475px;
+        color: gray;
+        margin: 0 auto;
+    }
     &__heading {
         margin-top: 0;
     }

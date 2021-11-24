@@ -13,6 +13,8 @@
 @import "message";
 @import "description";
 @import "information";
+@import "person";
+@import "offer";
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -31,4 +33,9 @@ body {
             opacity: 70%;
         }
     }
+}
+.signature {
+    background-image: url("./img/signature.png");
+    width: 223px;
+    height: 57px;
 }

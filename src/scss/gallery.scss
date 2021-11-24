@@ -22,12 +22,15 @@
                     transform: translate(-50%, -50%);
                 }
             }
+            &_home {
+                background-color: $navy;
+            }
         }
     }
     &__extension {
         background-color: $bg2;
         text-transform: uppercase;
-        color: gray;
+        color: $bg3;
         text-align: center;
         padding: 45px;
         font-size: 12px;

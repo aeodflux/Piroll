@@ -1,0 +1,14 @@
+.person {
+    background-color: $bg3;
+    text-align: center;
+    color: white;
+    &__container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 110px 0;
+    }
+    &_home {
+        background-color: $bg2;
+        color: black;
+    }
+}
