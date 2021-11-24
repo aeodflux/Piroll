@@ -73,5 +73,13 @@
             color: rgba(255, 255, 255, 0.5);
             transition: 0.3s;
         }
+        &_contact {
+            margin: 12px auto 0 12px;
+        }
+    }
+    &_contact {
+        grid-row: 1/1;
+        grid-column: 2/2;
+        padding: 0;
     }
 }

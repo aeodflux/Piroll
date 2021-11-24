@@ -1,0 +1,10 @@
+.map {
+    grid-column: 1/3;
+    grid-row: 3/3;
+    margin: 90px 0 0;
+    &__window {
+        border: none;
+        position:relative;
+        overflow:hidden;
+    }
+}
