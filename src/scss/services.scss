@@ -1,5 +1,5 @@
 .services {
-    background-color: $fev;
+    background-color: $bg2;
     padding: 50px;
     &__container {
         display: flex;
@@ -46,6 +46,7 @@
     }
     &__caption {
         text-transform: uppercase;
+        font-size: 12px;
     }
     &__text {
         color: gray;

@@ -1,20 +1,14 @@
 
-
-
-
 .header {
-    background-color: #e9e9e9;
+    background-color: $bg1;
     background-repeat: no-repeat;
     background-position-x: left;
     position: relative;
 }
-.home__header {
-    .nav {
-        &__menu {
-            max-width: 400px;
-        }
-    }
+.home__menu {
+    max-width: 400px;
 }
+
 .logo {
     width: 31px;
     height: 25px;
@@ -70,7 +64,7 @@
 }
 
 .headnote {
-    padding: 120px 0 120px 60%;
+    padding: 195px 0 195px 60%;
     &__heading {
         color: black;
         font-size: 35px;

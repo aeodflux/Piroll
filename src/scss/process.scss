@@ -7,22 +7,6 @@
         background-color: #ededed;
         margin: 0 auto;
     }
-    &__button {
-        background-image: url("./img/videosign.png");
-        width: 85px;
-        height: 85px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        cursor: pointer;
-        &_enabled {
-            display: block;
-        }
-        &_disabled {
-            display: none;
-        }
-    }
 }
 .description {
     text-align: center;
