@@ -36,3 +36,9 @@
         font-size: 12px;
     }
 }
+.extension {
+    &__button {
+        text-decoration: none;
+        color: $bg3;
+    }
+}
