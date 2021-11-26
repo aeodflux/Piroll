@@ -2,28 +2,73 @@
     display: flex;
     flex-wrap: wrap;
     &__item {
+        cursor: pointer;
         width: 25%;
         height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+            position: relative;
+            background: unset #00ffff7e;
+            background-blend-mode: multiply;
+            transition: 0.2s;
+            &::after {
+                content: url("./img/show.png");
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);  
+            }
+        }
         &_order {
             &_1 {
-                background-color: $g1;
+                background-color: #e8e7e5;
+                background-image: url("../img/portfolio-1.jpg");
             }
             &_2 {
-                background-color: $g2;
+                background-color: #efefef;
+                background-image: url("../img/portfolio-2.jpg");
             }
-            &_show {
-                position: relative;
-                background-color: $g3;
-                &::after {
-                    content: url("./img/show.png");
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                }
+            &_3 {
+                background-color: #efefef;
+                background-image: url("../img/portfolio-3.jpg");
             }
-            &_home {
-                background-color: $navy;
+            &_4 {
+                background-color: #dfe0e5;
+                background-image: url("../img/portfolio-4.jpg");
+            }   
+            &_5 {
+                background-color: #ececec;
+                background-image: url("../img/portfolio-5.jpg");
+            }
+            &_6 {
+                background-color: #ebebeb;
+                background-image: url("../img/portfolio-6.jpg");
+            }
+            &_7 {
+                background-color: #e2e2e2;
+                background-image: url("../img/portfolio-7.jpg");
+            }
+            &_8 {
+                background-color: #e5e4e2;
+                background-image: url("../img/portfolio-8.jpg");
+            }
+            &_9 {
+                background-color: #e5e4e2;
+                background-image: url("../img/portfolio-9.jpg");
+            }
+            &_10 {
+                background-color: #e5e4e2;
+                background-image: url("../img/portfolio-10.jpg");
+            }
+            &_11 {
+                background-color: #e5e4e2;
+                background-image: url("../img/portfolio-11.jpg");
+            }
+            &_12 {
+                background-color: #e5e4e2;
+                background-image: url("../img/portfolio-12.jpg");
             }
         }
     }

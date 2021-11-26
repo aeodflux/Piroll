@@ -31,10 +31,11 @@
         color: $g1;
         margin-bottom: 8px;
     }
-    &__picture {
+    &__gallery {
         grid-column: 2/2;
         background-color: $g1;
-        width: 1000px;
+        background-image: url("../img/portfolio-single-2-1.jpg");
+        background-size: contain;
         max-width: 100%;
         height: 100%;
     }
@@ -55,6 +56,15 @@
     &__link {
         text-decoration: none;
         color: black;
+        &:hover {
+            opacity: 50%;
+            transition: 0.2s;
+        }
+    }
+    &__more {
+        position: absolute;
+        left: -30px;
+        top: -10px;
     }
     &__item {
         position: relative;

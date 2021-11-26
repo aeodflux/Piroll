@@ -3,7 +3,8 @@
     margin: 0;
     &__example {
         width: 50%;
-        background-color: $bg1;
+        background-image: url("../img/skills_block.jpg");
+        background-size: contain;
     }
     &__caption {
         text-transform: uppercase;
