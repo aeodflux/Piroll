@@ -19,8 +19,8 @@
                 <li class="nav__item"><a href="about.html" class="link nav__link">about</a></li>
                 <li class="nav__item"><a href="work.html" class="link nav__link">work</a></li>
                 <li class="nav__item"><a href="#process" class="link nav__link">process</a></li>
-                <li class="nav__item"><a href="" class="link nav__link">services</a></li>
-                <li class="nav__item"><a href="project.html" class="link nav__link">testimonials</a></li>
+                <li class="nav__item"><a href="#services" class="link nav__link">services</a></li>
+                <li class="nav__item"><a href="project.html" class="link nav__link">projects</a></li>
                 <li class="nav__item"><a href="contact.html" class="link nav__link">contact</a></li>
             </ul>
         </nav>
@@ -120,7 +120,7 @@
         <div class="gallery__item gallery__item_order_8"></div>
     </div>
     <div class="extension gallery__extension"> 
-        <a href="#" class="extension__button">Load More Work</a>
+        <a href="work.html" class="extension__button">Load More Work</a>
     </div>
     <div class="process" id="process"> 
         <div class="description">
@@ -131,7 +131,7 @@
         <div class="process__video">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-Jk4ngsRcRo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     </div>
-    <div class="services">
+    <div class="services" id="services">
         <div class="services__container">
             <div class="services__item">
                 <div class="services__icon services__icon_order_1"></div>
@@ -213,7 +213,7 @@
             </a>
         </div>
     </div>
-    <form class="message" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST"> 
+    <form class="message" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" id="auth"> 
         <div class="message__container">
             <div class="message__info">
                 <h1 class="message__heading">Need a project?</h1>
@@ -221,13 +221,13 @@
                     if this could be the start of something beautiful.</p>
             </div>
             <div class="message__form">
-                <input class="message__area message__area_order_1" placeholder="Your Name" type="text">
+                <input class="message__area message__area_order_1" placeholder="Your Name" type="text" id="name" name="user_name" form="auth">
                 </input>
-                <input class="message__area message__area_order_2" placeholder="Your Email" type="text">
+                <input class="message__area message__area_order_2" placeholder="Your Email" type="email" id="mail" name="user_email" form="auth">
                 </input>
-                <input class="message__area message__area_order_3" placeholder="Your Title" type="text">
+                <input class="message__area message__area_order_3" placeholder="Your Title" type="text" form="auth" name="user_title">
                 </input>
-                <textarea class="message__area message__area_order_4" placeholder="Your Title" type="text"></textarea>
+                <textarea class="message__area message__area_order_4" placeholder="Your Comment" type="text" form="auth" name="user_comment"></textarea>
                 <button class="button message__button" type="submit">
                     send message
                 </button>
