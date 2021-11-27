@@ -22,6 +22,9 @@
 *, *::after, *::before {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+    }
 body {
     font-family: 'Oswald', sans-serif;
     background-color: #fff;
