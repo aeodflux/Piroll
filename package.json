@@ -25,5 +25,9 @@
     "gulp-sass": "^5.0.0",
     "sass": "^1.36.0"
   },
-  "browserslist": "last 2 versions"
+  "browserslist": "last 2 versions",
+  "dependencies": {
+    "krousel": "^0.2.4",
+    "vanilla-js-carousel": "^3.1.2"
+  }
 }
