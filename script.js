@@ -7,10 +7,9 @@ var slider = tns({
     slideBy: 'page',
     autoplay: true,
     speed: 400,
-    autoplayTimeout: 4000,
-    controlsPosition: "bottom",
-    controlsContainer: '.carousel__container',
-    nextButton: '.carousel__button',
-    nav: false,
-    autoplayButtonOutput: false
+    autoplayTimeout: 5000,
+    controls: false,
+    navContainer: '.carousel__container',
+    autoplayButtonOutput: false,
+    startIndex: 1,
   });
