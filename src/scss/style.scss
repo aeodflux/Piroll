@@ -1,3 +1,4 @@
+@import "lib";
 @import "variables";
 @import "header";
 @import "cutaway";
@@ -18,7 +19,8 @@
 @import "contact";
 @import "map";
 @import "project";
-@import "krousel/dist/krousel";
+@import "carousel";
+
 
 *, *::after, *::before {
     box-sizing: border-box;

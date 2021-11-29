@@ -27,7 +27,6 @@
   },
   "browserslist": "last 2 versions",
   "dependencies": {
-    "krousel": "^0.2.4",
-    "vanilla-js-carousel": "^3.1.2"
+    "tiny-slider": "^2.9.4"
   }
 }

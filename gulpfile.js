@@ -20,7 +20,7 @@ const scss = () => src('src/scss/style.scss')
   .pipe(autoprefixer())
   .pipe(csso())
   .pipe(dest('dist'))
-const scripts = () => src('src/js/script.js')
+const scripts = () => src(['node_modules/tiny-slider/dist/min/tiny-slider.js','src/js/script.js'])
   .pipe(concat('script.js')) //TODO: minify
   .pipe(dest('dist'));
 const serve = () => {

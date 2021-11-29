@@ -1,0 +1,17 @@
+.carousel {
+    &__container {
+        display: flex;
+        width: 70px;
+        margin: 0 auto;
+        position: relative;
+        background-image: url("../img/carsign.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__button {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        opacity: 0;
+    }
+}
