@@ -43,6 +43,9 @@ body {
         &:focus {
             opacity: 70%;
         }
+        &:hover {
+            opacity: 100%;
+        }
     }
 }
 .signature {

@@ -8,6 +8,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        transition: 0.2s;
         &:hover {
             position: relative;
             background: unset #00ffff7e;
@@ -18,7 +19,8 @@
                 position: absolute;
                 left: 50%;
                 top: 50%;
-                transform: translate(-50%, -50%);  
+                transform: translate(-50%, -50%); 
+                transition: 0.2s; 
             }
         }
         &_order {
@@ -85,5 +87,9 @@
     &__button {
         text-decoration: none;
         color: $bg3;
+        &:hover {
+            color: $navy;
+            transition: 0.2s;
+        }
     }
 }
