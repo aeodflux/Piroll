@@ -1,4 +1,10 @@
-var slider = tns({
+
+var provslid=document.querySelector('.my-slider')
+var provslid2=document.querySelector('.project__slider')
+var gal=document.querySelector('.gallery__item_order_2')
+
+if (provslid) {
+  var slider = tns({
     container: '.my-slider',
     items: 1,
     slideBy: 'page',
@@ -8,5 +14,27 @@ var slider = tns({
     controls: false,
     navContainer: '.carousel__container',
     autoplayButtonOutput: false,
-    startIndex: 1,
+    startIndex: 0,
   });
+
+}
+
+
+if (provslid2) {
+  var sliderSecond = tns({
+    container: '.project__slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    speed: 400,
+    nav: false,
+    controlsContainer: '.sidebar__menu',
+    autoplayButtonOutput: false,
+    prevButton: ".sidebar__item_first",
+    nextButton: ".sidebar__item_second",
+    startIndex: 0,
+  });
+
+  sliderSecond.goTo(3);
+
+}

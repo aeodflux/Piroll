@@ -1,14 +1,24 @@
 .project {
     background-color: $g2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2;
     width: 100%;
+    height: fit-content;
+    &__slider {
+        height: fit-content;
+    }
+    &__example {
+        width: 100%;
+        height: fit-content;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+    }
     &__info {
         background-color: $bg2;
         padding: 100px;
-        width: 100%;
-        grid-column: 1/1;
+        width: 50%;
     }
     &__item {
         display: flex;
@@ -32,14 +42,16 @@
         margin-bottom: 8px;
     }
     &__gallery {
-        grid-column: 2/2;
-        background-color: $g1;
-        background-image: url("./img/portfolio-1.jpg");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;
-        max-width: 100%;
-        height: 100%;
+        width: 50%;
+        height: 580px;
+        position: relative;
+    }
+    &__image {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);  
     }
 }
 .sidebar {
@@ -58,6 +70,9 @@
     &__link {
         text-decoration: none;
         color: black;
+        background: none;
+        border: none;
+        font-size: 24px;
         &:hover {
             opacity: 50%;
             transition: 0.2s;
