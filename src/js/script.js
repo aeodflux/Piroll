@@ -32,9 +32,6 @@ if (provslid2) {
     autoplayButtonOutput: false,
     prevButton: ".sidebar__item_first",
     nextButton: ".sidebar__item_second",
-    startIndex: 0,
+    startIndex: window.location.search.split('=')[1],
   });
-
-  sliderSecond.goTo(3);
-
 }
