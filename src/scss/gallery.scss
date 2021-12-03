@@ -27,8 +27,7 @@
                 height: 150%;
                 margin-top: 0;
                 margin-left: 0;
-                filter: blur(3px) brightness(50%);
-                }
+                filter: blur(2px) brightness(50%);
             }
         }
     }
@@ -65,13 +64,11 @@
         padding: 45px;
         font-size: 12px;
     }
+
+}
 .extension {
     &__button {
         text-decoration: none;
         color: $bg3;
-        &:hover {
-            color: $g1;
-            transition:  0.2s;
-        }
     }
 }
