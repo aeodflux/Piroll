@@ -1,5 +1,5 @@
 .carousel {
-    &__container {
+    &__controls {
         display: flex;
         width: 80px;
         margin: 0 auto;
@@ -10,6 +10,10 @@
         border: none;
         align-items: center;
         background: none;
+        margin: 100px auto;
+        width: 40px;
+        height: 10px;
+        cursor: pointer;
     }
     &__img {
         border-radius: 40px;
@@ -18,9 +22,9 @@
         height: 10px;
     }
 }
+
 .tns-nav-active {
     align-self: center;
-    margin: 97.5px 0 auto;
     .carousel__img {
         width: 15px;
         height: 15px;
@@ -28,5 +32,6 @@
         background-color: #fff;
         align-self: center;
         margin-left: -2.5px;
+        margin-top: -2.5px;
     }
 }

@@ -2,19 +2,14 @@
     background-color: $g2;
     width: 100%;
     height: fit-content;
-    &__slider {
+    &__carousel {
         height: fit-content;
     }
-    &__example {
-        width: 100%;
-        height: fit-content;
-    }
-    &__container {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: fit-content;
-    }
+}
+.work {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     &__info {
         background-color: $bg2;
         padding: 100px;
@@ -75,9 +70,9 @@
         font-size: 24px;
         cursor: pointer;
         font-family: inherit;
+        transition: opacity 0.2s;
         &:hover {
             opacity: 50%;
-            transition: 0.2s;
         }
     }
     &__more {
@@ -90,7 +85,7 @@
         text-transform: uppercase;
         font-size: 20px;
         align-self: center;
-        &_first {
+        &_order_1 {
             ::before {
                 content: url("./img/gal.png");
                 margin-right: 10px;
@@ -99,7 +94,7 @@
                 margin-top: -3px;
             }
         }
-        &_second {
+        &_order_2 {
             ::after {
                 content: url("./img/gal2.png");
                 margin-left: 10px;

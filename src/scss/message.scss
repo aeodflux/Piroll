@@ -69,12 +69,12 @@
         border: none;
         cursor: pointer;
         font-family: inherit;
+        transition: color 0.3s;
         &:active {
             color: rgba(255, 255, 255, 0.5);
         }
         &:hover {
             color: rgba(255, 255, 255, 0.5);
-            transition: 0.3s;
         }
         &_contact {
             margin: 12px auto 0 12px;

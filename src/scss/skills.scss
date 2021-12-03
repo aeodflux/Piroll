@@ -4,7 +4,7 @@
     &__example {
         width: 50%;
         background-image: url("./img/skills_block.jpg");
-        background-size: contain;
+        background-size: 100% auto;
     }
     &__caption {
         text-transform: uppercase;

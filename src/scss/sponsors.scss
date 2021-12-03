@@ -5,13 +5,13 @@
         justify-content: space-around;
     }
     &__link {
+        transition: opacity 0.3s;
         &:focus {
             outline: none;
             opacity: 50%;
         }
         &:hover {
             opacity: 50%;
-            transition: 0.3s;
         }
     }
     &__item {

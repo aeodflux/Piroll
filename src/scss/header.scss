@@ -32,6 +32,7 @@
     }
     &__item {
         margin: 0 20px;
+        transition: opacity 0.2s;
         text-transform: uppercase;
         &:focus-within {
             outline: none;
@@ -39,19 +40,18 @@
         }
         &:hover {
             opacity: 50%;
-            transition: 0.2s;
         }
     }
     &__link {
         padding: 5px;
         color: black;
+        transition: opacity 0.2s;
         &:focus {
             outline: none;
             opacity: 50%;
         }
         &:hover {
             opacity: 50%;
-            transition: 0.2s;
         }
     }
     &__logo {
@@ -82,12 +82,12 @@
         display: block;
         width: fit-content;
         margin-top: 25px;
+        transition: color 0.3s;
         &:enabled {
             outline: black auto 5px;
         }
         &:hover {
             color: rgba(255, 255, 255, 0.5);
-            transition: 0.3s;
         }
     }
 }
