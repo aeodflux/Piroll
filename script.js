@@ -2,20 +2,19 @@ var tns=function(){var t=window,Ai=t.requestAnimationFrame||t.webkitRequestAnima
 //# sourceMappingURL=../sourcemaps/tiny-slider.js.map
 
 
-var provslid=document.querySelector('.my-slider')
-var provslid2=document.querySelector('.project__slider')
-var gal=document.querySelector('.gallery__item_order_2')
+var quoteCarouselElement=document.querySelector('.slogan__carousel')
+var projectCarouseElement=document.querySelector('.project__carousel')
 
-if (provslid) {
+if (quoteCarouselElement) {
   var slider = tns({
-    container: '.my-slider',
+    container: '.slogan__carousel',
     items: 1,
     slideBy: 'page',
     autoplay: true,
     speed: 400,
     autoplayTimeout: 5000,
     controls: false,
-    navContainer: '.carousel__container',
+    navContainer: '.carousel__controls',
     autoplayButtonOutput: false,
     startIndex: 0,
   });
@@ -23,9 +22,9 @@ if (provslid) {
 }
 
 
-if (provslid2) {
+if (projectCarouseElement) {
   var sliderSecond = tns({
-    container: '.project__slider',
+    container: '.project__carousel',
     items: 1,
     slideBy: 'page',
     autoplay: false,
@@ -33,8 +32,8 @@ if (provslid2) {
     nav: false,
     controlsContainer: '.sidebar__menu',
     autoplayButtonOutput: false,
-    prevButton: ".sidebar__item_first",
-    nextButton: ".sidebar__item_second",
+    prevButton: ".sidebar__item_order_1",
+    nextButton: ".sidebar__item_order_2",
     startIndex: window.location.search.split('=')[1],
   });
 }

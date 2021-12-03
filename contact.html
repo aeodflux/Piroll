@@ -12,101 +12,103 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <ul class="nav__menu nav__menu_min">
+            <ul class="nav__menu">
                 <li class="nav__item"><a href="index.html" class="link nav__link">home</a></li>
                 <li class="nav__item"><a href="about.html" class="link nav__link">about</a></li>
                 <li class="nav__item"><a href="contact.html" class="link nav__link  link--active">contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="contact">
-        <div class="contact__container">
-            <div class="contact__info">
-                <h1 class="contact__heading">
-                    Contact Info:
-                </h1>
-                <p class="contact__text">
-                    To give give beginning divide, cattle. Give moving 
-                    won't, there the abundantly she'd she'd brought air 
-                    upon. Light hath subdue. Life days creature upon 
-                    first heaven gathering dry.
-                </p>
-                <div class="contact__block">
-                    <div class="contact__item">
-                        <p class="contact__link">Address:</p>
-                        <p class="contact__caption">10111 Santa Monica Boulevard, LA</p>
-                    </div>
-                    <div class="contact__item">
-                        <p class="contact__link">Phone:</p>
-                        <p class="contact__caption">+44 987 065 908</p>
-                    </div>
-                    <div class="contact__item">
-                        <p class="contact__link">Email:</p>
-                        <p class="contact__caption">info@Example.com</p>
-                    </div>
-                    <div class="contact__item">
-                        <p class="contact__link">Fax:</p>
-                        <p class="contact__caption">+44 987 065 909</p>
-                    </div>
-                </div>
-            </div>
-            <form class="message message_contact" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" id="auth">
-                <div class="message__container">
-                    <div class="message__form">
-                        <input class="message__area message__area_order_1" placeholder="Your Name" type="text" id="name" name="user_name" form="auth">
-                        </input>
-                        <input class="message__area message__area_order_2" placeholder="Your Email" type="email" id="mail" name="user_email" form="auth">
-                        </input>
-                        <input class="message__area message__area_order_3" placeholder="Your Title" type="text" form="auth" name="user_title">
-                        </input>
-                        <textarea class="message__area message__area_order_4" placeholder="Your Comment" type="text" form="auth" name="user_comment"></textarea>
-                        <button class="button message__button message__button_contact" type="submit">
-                            send message
-                        </button>
+    <main>
+        <div class="contact">
+            <div class="contact__container">
+                <div class="contact__info">
+                    <h2 class="contact__heading">
+                        Contact Info:
+                    </h2>
+                    <p class="contact__text">
+                        To give give beginning divide, cattle. Give moving
+                        won't, there the abundantly she'd she'd brought air
+                        upon. Light hath subdue. Life days creature upon
+                        first heaven gathering dry.
+                    </p>
+                    <div class="contact__block">
+                        <div class="contact__item">
+                            <p class="contact__link">Address:</p>
+                            <a href="https://www.google.com/maps/place/10111+Santa+Monica+Blvd,+Los+Angeles,+CA+90024,+%D0%A1%D0%A8%D0%90/data=!4m2!3m1!1s0x80c2bb8b3cfc7839:0x6f5778ce061fb0ff?sa=X&ved=2ahUKEwihs-SjwMf0AhVwkosKHfm-Da4Q8gF6BAgIEAE" class="contact__caption">10111 Santa Monica Boulevard, LA</a>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__link">Phone:</p>
+                            <a href="tel:+44 987 065 908" class="contact__caption">+44 987 065 908</a>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__link">Email:</p>
+                            <a href="mailto:info@Example.com" class="contact__caption">info@Example.com</a>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__link">Fax:</p>
+                            <a href="tel:+44 987 065 909" class="contact__caption">+44 987 065 909</a>
+                        </div>
                     </div>
                 </div>
-            </form>
-            <div class="map contact__map">
-                <div class="map__window"><a href="https://yandex.ru/maps/org/dizayn_komplekt/1027909684/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Дизайн Комплект</a><a href="https://yandex.ru/maps/22/kaliningrad/category/flooring/184107717/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Напольные покрытия в Калининграде</a><a href="https://yandex.ru/maps/22/kaliningrad/category/dry_mixes/184107757/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Сухие строительные смеси в Калининграде</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUuRFhbGB" width="1200" height="500" frameborder="1" allowfullscreen="true" style="position:relative;border:none"></iframe></div>
+                <form class="message message_contact" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" id="auth">
+                    <div class="message__container">
+                        <div class="message__form">
+                            <input class="message__area message__area_order_1" placeholder="Your Name" type="text" id="name" name="user_name" form="auth">
+                            </input>
+                            <input class="message__area message__area_order_2" placeholder="Your Email" type="email" id="mail" name="user_email" form="auth">
+                            </input>
+                            <input class="message__area message__area_order_3" placeholder="Your Title" type="text" form="auth" name="user_title">
+                            </input>
+                            <textarea class="message__area message__area_order_4" placeholder="Your Comment" type="text" form="auth" name="user_comment"></textarea>
+                            <button class="button message__button message__button_contact" type="submit">
+                                send message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="map contact__map">
+                    <div class="map__window"><a href="https://yandex.ru/maps/org/dizayn_komplekt/1027909684/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Дизайн Комплект</a><a href="https://yandex.ru/maps/22/kaliningrad/category/flooring/184107717/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Напольные покрытия в Калининграде</a><a href="https://yandex.ru/maps/22/kaliningrad/category/dry_mixes/184107757/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Сухие строительные смеси в Калининграде</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUuRFhbGB" width="1200" height="500" frameborder="1" allowfullscreen="true" style="position:relative;border:none"></iframe></div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     <footer class="footer">
         <div class="footer__item">
-         <h1 class="footer__heading">
+         <h2 class="footer__heading">
              Piroll Design Inc.
-         </h1>
+         </h2>
          <p class="footer__text">© 2017 Piroll. All rights reserved.
              Designed by robirurk.</p>
      </div>
      <div class="footer__item">
          <p class="footer_text">
-             <a class="footer__link" href="hello@pirolltheme.com">hello@pirolltheme.com</a>
-             +44 987 065 908 
+            <a class="footer__link" href="mailto:hello@pirolltheme.com">hello@pirolltheme.com</a>
+            <a class="footer__link" href="tel:+44 987 065 908">+44 987 065 908 </a>
          </p>
      </div>
      <div class="footer__item footer__contacts">
          <p class="footer_text">
-             <a class="footer__link" href="#">Projects</a><br>
-             <a class="footer__link" href="#">About</a><br>
-             <a class="footer__link" href="#">Services</a><br>
-             <a class="footer__link" href="#">Carreer</a><br>
+             <a class="footer__link" href="#">Projects</a> 
+             <a class="footer__link" href="#">About</a> 
+             <a class="footer__link" href="#">Services</a> 
+             <a class="footer__link" href="#">Carreer</a> 
          </p>
      </div>
      <div class="footer__item footer__contacts">
          <p class="footer_text">
-             <a class="footer__link" href="#">News</a><br>
-             <a class="footer__link" href="#">Events</a><br>
-             <a class="footer__link" href="#">Contact</a><br>
-             <a class="footer__link" href="#">Legals</a><br>
+             <a class="footer__link" href="#">News</a> 
+             <a class="footer__link" href="#">Events</a> 
+             <a class="footer__link" href="#">Contact</a> 
+             <a class="footer__link" href="#">Legals</a> 
          </p>
      </div>
      <div class="footer__item footer__contacts">
          <p class="footer_text">
-             <a class="footer__link" href="#">Facebook</a><br>
-             <a class="footer__link" href="#">Twitter</a><br>
-             <a class="footer__link" href="#">Instagram</a><br>
-             <a class="footer__link" href="#">Dribbble</a><br>
+             <a class="footer__link" href="#">Facebook</a> 
+             <a class="footer__link" href="#">Twitter</a> 
+             <a class="footer__link" href="#">Instagram</a> 
+             <a class="footer__link" href="#">Dribbble</a> 
          </p>
      </div>
 </footer>
