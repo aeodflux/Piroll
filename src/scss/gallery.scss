@@ -5,73 +5,56 @@
         cursor: pointer;
         width: 25%;
         height: 300px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: 0.2s;
+        position: relative;
+        overflow: hidden;
+        background-color: $bg1;
         &:hover {
-            position: relative;
-            background: unset #00ffff7e;
-            background-blend-mode: multiply;
-            transition: 0.2s;
-            &::after {
-                content: url("./img/show.png");
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%); 
-                transition: 0.2s; 
+            .gallery__caption {
+                opacity: 100%;
+                transition: 0.2s ease;
             }
         }
-        &_order {
-            &_1 {
-                background-color: #e8e7e5;
-                background-image: url("./img/portfolio-1.jpg");
+        &:focus {
+            outline: none;
+            border: none;
+            .gallery__caption {
+                opacity: 100%;
+                transition: 0.2s ease;
+            } 
+            .gallery__image {
+                transition: 0.4s;
+                width: 150%;
+                height: 150%;
+                margin-top: 0;
+                margin-left: 0;
+                filter: blur(3px) brightness(50%);
+                }
             }
-            &_2 {
-                background-color: #efefef;
-                background-image: url("./img/portfolio-2.jpg");
-            }
-            &_3 {
-                background-color: #efefef;
-                background-image: url("./img/portfolio-3.jpg");
-            }
-            &_4 {
-                background-color: #dfe0e5;
-                background-image: url("./img/portfolio-4.jpg");
-            }   
-            &_5 {
-                background-color: #ececec;
-                background-image: url("./img/portfolio-5.jpg");
-            }
-            &_6 {
-                background-color: #ebebeb;
-                background-image: url("./img/portfolio-6.jpg");
-            }
-            &_7 {
-                background-color: #e2e2e2;
-                background-image: url("./img/portfolio-7.jpg");
-            }
-            &_8 {
-                background-color: #e5e4e2;
-                background-image: url("./img/portfolio-8.jpg");
-            }
-            &_9 {
-                background-color: #e5e4e2;
-                background-image: url("./img/portfolio-9.jpg");
-            }
-            &_10 {
-                background-color: #e5e4e2;
-                background-image: url("./img/portfolio-10.jpg");
-            }
-            &_11 {
-                background-color: #e5e4e2;
-                background-image: url("./img/portfolio-11.jpg");
-            }
-            &_12 {
-                background-color: #e5e4e2;
-                background-image: url("./img/portfolio-12.jpg");
-            }
+        }
+    }
+    &__caption {
+        pointer-events: none;
+        opacity: 0%;
+        position: absolute;
+        left: 10%;
+        top: 0%;
+        transform: translate(50%, 50%);
+        color: white;
+    }
+    &__name {
+        color: $navy;
+    }
+    &__image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        &:hover {
+            transition: 0.4s;
+            width: 150%;
+            height: 150%;
+            margin-top: 0;
+            margin-left: 0;
+            filter: blur(2px) brightness(50%); 
         }
     }
     &__extension {
@@ -82,14 +65,13 @@
         padding: 45px;
         font-size: 12px;
     }
-}
 .extension {
     &__button {
         text-decoration: none;
         color: $bg3;
         &:hover {
-            color: $navy;
-            transition: 0.2s;
+            color: $g1;
+            transition:  0.2s;
         }
     }
 }

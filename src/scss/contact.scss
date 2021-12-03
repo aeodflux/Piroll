@@ -21,7 +21,6 @@
     &__link {
         font-weight: bold;
         margin-right: 4px;
-        margin-bottom: 8px;
     }
     &__text {
         color: $g1;
@@ -29,6 +28,10 @@
     }
     &__caption {
         color: $g1;
-        margin-bottom: 8px;
+        align-self: center;
+        text-decoration: none;
+        &:hover {
+            color: $navy;
+        }
     }
 }

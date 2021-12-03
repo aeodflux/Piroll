@@ -20,9 +20,11 @@
         max-width: 200px;
     }
     &__link {
+        display: block;
         color: gray;
         text-decoration: none;
         &:hover {
+            transition: 0.2s;
             color: $navy;
         }
     }

@@ -28,8 +28,10 @@
         background-color: #fff; 
         margin: 12px;
         padding: 20px;
-        ::placeholder {
+        font-family: 'Nunito Sans', sans-serif;
+        &::placeholder {
             color:gray;
+            font-family: 'Nunito Sans', sans-serif;
         }
         &_order {
             &_1 {
@@ -66,6 +68,7 @@
         grid-row: 4/4;
         border: none;
         cursor: pointer;
+        font-family: inherit;
         &:active {
             color: rgba(255, 255, 255, 0.5);
         }

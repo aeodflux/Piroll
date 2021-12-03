@@ -1,5 +1,8 @@
 .information {
     display: flex;
+    &__paragraph {
+        margin-bottom: 20px;
+    }
     &__gallery {
         width: 50%;
         background-color: $bg1;
