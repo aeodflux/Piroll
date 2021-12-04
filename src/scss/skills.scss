@@ -3,8 +3,9 @@
     margin: 0;
     &__example {
         width: 50%;
+        background-repeat: no-repeat;
         background-image: url("./img/skills_block.jpg");
-        background-size: 100% auto;
+        background-size: cover;
     }
     &__caption {
         text-transform: uppercase;
