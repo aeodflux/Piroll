@@ -34,16 +34,14 @@
         background-color: $navy;
         height: 100%;
         border-radius: 10px;
-        &_width {
-            &_1 {
-                width: 75%;
-            }
-            &_2 {
-                width: 90%;
-            }
-            &_3 {
-                width: 60%;
-            }
+        &_width_1 {
+            width: 75%;
+        }
+        &_width_2 {
+            width: 90%;
+        }
+        &_width_3 {
+            width: 60%;
         }
     }
     &__caption {

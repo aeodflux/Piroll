@@ -80,27 +80,27 @@
         left: -30px;
         top: -10px;
     }
-    &__item {
-        position: relative;
-        text-transform: uppercase;
-        font-size: 20px;
-        align-self: center;
-        &_order_1 {
-            ::before {
-                content: url("./img/gal.png");
-                margin-right: 10px;
-                margin-left: -15px;
-                position: absolute;
-                margin-top: -3px;
-            }
+}
+.sidebar__item {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+    align-self: center;
+    &_order_1 {
+        ::before {
+            content: url("./img/gal.png");
+            margin-right: 10px;
+            margin-left: -15px;
+            position: absolute;
+            margin-top: -3px;
         }
-        &_order_2 {
-            ::after {
-                content: url("./img/gal2.png");
-                margin-left: 10px;
-                position: absolute;
-                margin-top: -3px;
-            }
+    }
+    &_order_2 {
+        ::after {
+            content: url("./img/gal2.png");
+            margin-left: 10px;
+            position: absolute;
+            margin-top: -3px;
         }
     }
 }

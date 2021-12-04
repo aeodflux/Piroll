@@ -17,35 +17,33 @@
         width: 50px;
         height: 50px;
         margin: 0 auto;
-        &_order {
-            &_1 {
-                background-image: url("./img/sericon1.png");
-            }
-            &_2 {
-                background-image: url("./img/sericon2.png");
-                width: 43px;
-            }
-            &_3 {
-                background-image: url("./img/sericon3.png");
-                width: 28px;
-            }
-            &_4 {
-                background-image: url("./img/sericon4.png");
-                width: 45px;
-            }
-            &_5 {
-                background-image: url("./img/sericon5.png");
-            }
-            &_6 {
-                background-image: url("./img/sericon6.png");
-            }
-            &_7 {
-                background-image: url("./img/sericon7.png");
-                width: 40px;
-            }
-            &_8 {
-                background-image: url("./img/sericon8.png");
-            }
+        &_order_1 {
+            background-image: url("./img/sericon1.png");
+        }
+        &_order_2 {
+            background-image: url("./img/sericon2.png");
+            width: 43px;
+        }
+        &_order_3 {
+            background-image: url("./img/sericon3.png");
+            width: 28px;
+        }
+        &_order_4 {
+            background-image: url("./img/sericon4.png");
+            width: 45px;
+        }
+        &_order_5 {
+            background-image: url("./img/sericon5.png");
+        }
+        &_order_6 {
+            background-image: url("./img/sericon6.png");
+        }
+        &_order_7 {
+            background-image: url("./img/sericon7.png");
+            width: 40px;
+        }
+        &_order_8 {
+            background-image: url("./img/sericon8.png");
         }
     }
     &__caption {

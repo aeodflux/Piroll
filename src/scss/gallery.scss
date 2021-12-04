@@ -8,11 +8,6 @@
         position: relative;
         overflow: hidden;
         background-color: $bg1;
-        &:hover {
-            .gallery__caption {
-                opacity: 100%;
-            }
-        }
     }
     &:focus {
         outline: none;
@@ -80,31 +75,8 @@
         }
     }
 }
-
-// .gallery__item {
-//     cursor: pointer;
-//     width: 25%;
-//     height: 300px;
-//     position: relative;
-//     overflow: hidden;
-//     background-color: $bg1;
-//     &:hover {
-//         .gallery__caption {
-//             opacity: 100%;
-//         }
-//     }
-//     &:focus {
-//         outline: none;
-//         border: none;
-//         .gallery__caption {
-//             opacity: 100%;
-//         } 
-//         .gallery__image {
-//             width: 150%;
-//             height: 150%;
-//             margin-top: 0;
-//             margin-left: 0;
-//             filter: blur(2px) brightness(50%);
-//         }
-//     }
-// }
+.gallery__item:hover {
+    .gallery__caption {
+        opacity: 100%;
+    }
+}

@@ -19,22 +19,20 @@
         width: 130px;
         height: 80px; 
         align-self: center;
-        &_order {
-            &_1 {
-                background-image: url("./img/sponicon1.png");
-            }
-            &_2 {
-                background-image: url("./img/sponicon2.png");
-            }
-            &_3 {
-                background-image: url("./img/sponicon3.png");
-            }
-            &_4 {
-                background-image: url("./img/sponicon4.png");
-            }
-            &_5 {
-                background-image: url("./img/sponicon5.png");
-            }
+        &_order_1 {
+            background-image: url("./img/sponicon1.png");
+        }
+        &_order_2 {
+            background-image: url("./img/sponicon2.png");
+        }
+        &_order_3 {
+            background-image: url("./img/sponicon3.png");
+        }
+        &_order_4 {
+            background-image: url("./img/sponicon4.png");
+        }
+        &_order_5 {
+            background-image: url("./img/sponicon5.png");
         }
     }
 }

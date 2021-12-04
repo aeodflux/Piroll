@@ -17,19 +17,17 @@
         background-repeat: no-repeat;
         align-self: center;
         margin-right: 30px;
-        &_order {
-            &_1 {
-                background-image: url("./img/stat1.png");
-            }
-            &_2 {
-                background-image: url("./img/stat2.png");
-            }
-            &_3 {
-                background-image: url("./img/stat3.png");
-            }
-            &_4 {
-                background-image: url("./img/stat4.png");
-            }
+        &_order_1 {
+            background-image: url("./img/stat1.png");
+        }
+        &_order_2 {
+            background-image: url("./img/stat2.png");
+        }
+        &_order_3 {
+            background-image: url("./img/stat3.png");
+        }
+        &_order_4 {
+            background-image: url("./img/stat4.png");
         }
     }
     &__amount {
