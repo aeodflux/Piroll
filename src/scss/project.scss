@@ -39,14 +39,13 @@
     &__gallery {
         width: 50%;
         height: 580px;
-        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &__image {
-        position: absolute;
         width: 100%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);  
     }
 }
 .sidebar {

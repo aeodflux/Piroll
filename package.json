@@ -28,6 +28,7 @@
   },
   "browserslist": "last 2 versions",
   "dependencies": {
-    "tiny-slider": "^2.9.4"
+    "tiny-slider": "^2.9.4",
+    "vanilla-js-wheel-zoom": "^6.10.1"
   }
 }

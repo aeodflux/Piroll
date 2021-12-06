@@ -1,10 +1,17 @@
 
 .header {
-    background-image: url("./img/header_bg.jpg");
+    // background-image: url("./img/header_bg.jpg");
     background-size: contain;
     background-color: #efefef;
     background-repeat: no-repeat;
-    position: relative;
+    &__container {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-image: url("./img/header_bg.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 .logo {
@@ -16,9 +23,12 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     background-color: white;
     border: none;
+    width: 100%;
+    // @include media ($mobile) {
+    //     cjfvkfj
+    // }
     &__menu {
         width: fit-content;
         display: flex;
@@ -30,7 +40,7 @@
         padding-bottom: 35px;
         margin: 0 auto;
     }
-    &__item {
+    &__item { 
         margin: 0 20px;
         transition: opacity 0.2s;
         text-transform: uppercase;
@@ -61,7 +71,9 @@
 }
 
 .headnote {
-    padding: 195px 0 195px 60%;
+    padding: 195px 100px 195px;
+    margin: 0 0 0 auto;
+    max-width: fit-content;
     &__heading {
         color: black;
         font-size: 35px;

@@ -1,8 +1,10 @@
 .statistics {
     width: 100%;
     background-color: $navy;
-    padding: 100px;
     &__container {
+        margin: 0 auto;
+        padding: 100px;
+        max-width: 1200px;
         display: flex;
         justify-content: space-between;
     }

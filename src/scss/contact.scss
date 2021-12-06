@@ -1,12 +1,13 @@
 .contact {
     background-color: $bg2;
-    padding: 90px 0 110px;
+    width: 100%;
+    padding: 100px;
     &__container {
-        max-width: 1200px;
         margin: 0 auto;
+        max-width: 1200px;
         display: grid;
-        grid-template-columns: 2;
-        grid-template-rows: 3;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
     }
     &__info {
         max-width: 350px;

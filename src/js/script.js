@@ -34,3 +34,53 @@ if (projectCarouseElement) {
     startIndex: window.location.search.split('=')[1],
   });
 }
+if ('#myContent') {
+  WZoom.create('#myContent', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent2', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent3', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent4', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent5', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent6', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent7', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent8', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent9', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent10', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent11', {
+    minScale: 1,
+    maxScale: 2,
+  });
+  WZoom.create('#myContent12', {
+    minScale: 1,
+    maxScale: 2,
+  });
+}
