@@ -23,7 +23,7 @@ const scss = () => src('src/scss/style.scss')
 }))
   .pipe(csso())
   .pipe(dest('dist'))
-const scripts = () => src(['node_modules/tiny-slider/dist/min/tiny-slider.js','node_modules/vanilla-js-wheel-zoom/dist/wheel-zoom.min.js', 'src/js/script.js'])
+const scripts = () => src(['node_modules/tiny-slider/dist/min/tiny-slider.js', 'src/js/script.js'])
   .pipe(concat('script.js'))
   .pipe(minify())
   .pipe(dest('dist'));

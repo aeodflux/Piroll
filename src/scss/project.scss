@@ -45,7 +45,10 @@
         justify-content: center;
     }
     &__image {
+        // position: absolute;
         width: 100%;
+        // transform: translate(-100%, -100%);
+        // scale: 0.5;
     }
 }
 .sidebar {
