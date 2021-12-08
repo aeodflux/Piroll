@@ -17,6 +17,7 @@ if (quoteCarouselElement) {
     navContainer: '.carousel__controls',
     autoplayButtonOutput: false,
     startIndex: 0,
+    mouseDrag: true
   });
 
 }
@@ -34,6 +35,7 @@ if (projectCarouseElement) {
     autoplayButtonOutput: false,
     prevButton: ".sidebar__item_order_1",
     nextButton: ".sidebar__item_order_2",
-    startIndex: window.location.search.split('=')[1],
+    // startIndex: window.location.search.split('=')[1],
+    startIndex: 0,
   });
 }
