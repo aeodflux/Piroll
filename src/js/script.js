@@ -32,7 +32,6 @@ if (projectCarouseElement) {
     autoplayButtonOutput: false,
     prevButton: ".sidebar__item_order_1",
     nextButton: ".sidebar__item_order_2",
-    // startIndex: window.location.search.split('=')[1],
-    startIndex: 0,
+    startIndex: window.location.search.split('=')[1],
   });
 }
