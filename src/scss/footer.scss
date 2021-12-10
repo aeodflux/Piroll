@@ -6,11 +6,17 @@
     justify-content: space-between;
     color: gray;
     line-height: 1.5;
+    @include media($tablet) {
+        padding: 50px;
+    }
     &__item {
         margin: 0 auto;
         width: fit-content;
         font-size: 15px;
         max-width: 350px;
+        @include media($tablet) {
+            max-width: 120px;
+        }
     }
     &__heading {
         color: white;

@@ -2,6 +2,9 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 60px;
+    @include media($tablet) {
+        margin-bottom: 40px;
+    }
     &__text {
         max-width: 475px;
         color: gray;

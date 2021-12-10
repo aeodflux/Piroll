@@ -1,6 +1,9 @@
 .cutaway {
     padding: 100px;
     text-align: center;
+    @include media($tablet) {
+        padding: 50px;
+    }
     &__container {
         margin: 0 auto;
         max-width: 600px;

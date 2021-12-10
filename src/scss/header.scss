@@ -1,6 +1,5 @@
 
 .header {
-    // background-image: url("./img/header_bg.jpg");
     background-size: contain;
     background-color: #efefef;
     background-repeat: no-repeat;
@@ -11,13 +10,15 @@
         background-image: url("./img/header_bg.jpg");
         background-size: contain;
         background-repeat: no-repeat;
+        // @include media($tablet) {
+        //     background-position: center;
+        //     background-size: auto;
+        // }
+        @include media($tablet) {
+            background-position: center;
+            background-size: auto;
+        }
     }
-}
-
-.logo {
-    width: 31px;
-    height: 25px;
-    background-image: url('./img/logo.png'); //TODO: replace icon with svg
 }
 
 .nav {
@@ -26,9 +27,6 @@
     background-color: white;
     border: none;
     width: 100%;
-    // @include media ($mobile) {
-    //     cjfvkfj
-    // }
     &__menu {
         width: fit-content;
         display: flex;
@@ -74,15 +72,28 @@
     padding: 195px 100px 195px;
     margin: 0 0 0 auto;
     max-width: fit-content;
+    @include media($tablet) {
+        padding: 100px 0;
+        margin: 0 auto;
+    }
     &__heading {
         color: black;
         font-size: 35px;
         margin: 0;
+        @include media($tablet) {
+            font-size: 45px;
+            margin: 0 auto 30px;
+        }
     }
     &__text {
         max-width: 480px;
         color: $g1;
         font-size: 18px;
+        @include media($tablet) {
+            font-size: 20px;
+            margin: 12px auto;
+            text-align: center;
+        }
     }
     &__link {
         text-transform: uppercase;
@@ -100,6 +111,11 @@
         }
         &:hover {
             color: rgba(255, 255, 255, 0.5);
+        }
+        @include media($tablet) {
+            font-size: 20px;
+            margin: 30px auto 0;
+            text-align: center;
         }
     }
 }

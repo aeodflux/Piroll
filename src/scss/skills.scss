@@ -1,11 +1,17 @@
 .skills {
     display: flex;
     margin: 0;
+    @include media($tablet) {
+        display: block;
+    }
     &__example {
         width: 50%;
         background-repeat: no-repeat;
         background-image: url("./img/skills_block.jpg");
         background-size: cover;
+        @include media($tablet) {
+            display: none;
+        }
     }
     &__caption {
         text-transform: uppercase;
@@ -16,6 +22,9 @@
     width: 50%;
     background-color: $bgs;
     padding: 80px 100px;
+    @include media($tablet) {
+        width: 100%;
+    }
     &__item {
         margin: 25px 0;
         display: grid;

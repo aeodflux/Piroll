@@ -1,11 +1,18 @@
 .sponsors {
-    padding: 50px;
+    padding: 100px 50px;
+    @include media($tablet) {
+        padding: 50px 40px;
+    }
     &__container {
         display: flex;
         justify-content: space-around;
     }
     &__link {
+        margin: 0 auto;
         transition: opacity 0.3s;
+        @include media($tablet) {
+            width: 50%;
+        }
         &:focus {
             outline: none;
             opacity: 50%;
@@ -15,10 +22,15 @@
         }
     }
     &__item {
+        background-size: contain;
         background-repeat: no-repeat;
         width: 130px;
         height: 80px; 
         align-self: center;
+        margin: 0 auto;
+        @include media($tablet) {
+            width: 90px;
+        }
         &_order_1 {
             background-image: url("./img/sponicon1.png");
         }

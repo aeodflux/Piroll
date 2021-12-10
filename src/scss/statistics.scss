@@ -7,16 +7,26 @@
         max-width: 1200px;
         display: flex;
         justify-content: space-between;
+        @include media($tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:  1fr 1fr;
+            padding: 50px;
+        }
     }
     &__item {
         display: flex;
         color: white;
         font-size: 12px;
+        @include media($tablet) {
+            margin: 15px auto;
+        }
     }
     &__icon {
         width: 43px;
         height: 40px;
         background-repeat: no-repeat;
+        background-size: contain;
         align-self: center;
         margin-right: 30px;
         &_order_1 {

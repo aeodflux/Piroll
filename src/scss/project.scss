@@ -72,9 +72,9 @@
         font-size: 24px;
         cursor: pointer;
         font-family: inherit;
-        transition: opacity 0.2s;
+        transition: color 0.2s;
         &:hover {
-            opacity: 50%;
+            color: $navy;
         }
     }
     &__more {
