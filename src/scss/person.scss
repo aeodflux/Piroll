@@ -11,6 +11,9 @@
         margin: 0 auto;
         padding: 110px 0;
         text-align: center;
+        @include media($tablet) {
+            padding: 50px 0;
+        }
     }
     &_page_work {
         background-image: none;
