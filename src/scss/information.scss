@@ -1,21 +1,28 @@
 .information {
     display: flex;
+    margin: 0 auto;
+    justify-content: center;
     &__paragraph {
         margin-bottom: 20px;
     }
     &__gallery {
         width: 50%;
         background-color: $bg1;
-        min-width: 570px;
         background-image: url("./img/about-me.jpg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: cover;
+        @include media($tablet) {
+            background-size: auto;
+        }
     }
     &__card {
         width: 50%;
         padding: 140px 85px;
         background-color: $bg2;
+        @include media($tablet) {
+            padding: 80px 85px
+        }
     }
     &__heading {
         max-width: 810px;
@@ -24,8 +31,10 @@
     }
     &__text {
         margin: 50px 0;
-        max-width: 420px;
         color: $bg3;
+        @include media($tablet) {
+            max-width: 420px;
+        }
     }
     &__signature {
         margin-left: 0;

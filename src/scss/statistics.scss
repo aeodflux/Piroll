@@ -4,7 +4,6 @@
     &__container {
         margin: 0 auto;
         padding: 100px;
-        max-width: 1200px;
         display: flex;
         justify-content: space-between;
         @include media($tablet) {
@@ -12,6 +11,7 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows:  1fr 1fr;
             padding: 50px;
+            max-width: 768px;
         }
     }
     &__item {
