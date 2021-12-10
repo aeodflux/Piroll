@@ -2,15 +2,29 @@
     background-color: $bg2;
     width: 100%;
     padding: 100px;
+    @include media($tablet) {
+        padding: 50px 80px;
+    }
     &__container {
         margin: 0 auto;
         max-width: 1200px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
+        @include media($tablet) {
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto;
+        }
     }
     &__info {
         max-width: 350px;
+        grid-row: 1/1;
+        grid-column: 1/1;
+        @include media($tablet) {
+            grid-row: 1/1;
+            grid-column: 1/1;
+            max-width: 100%;
+        }
     }
     &__item {
         display: flex;
