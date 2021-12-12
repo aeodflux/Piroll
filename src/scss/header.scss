@@ -26,6 +26,27 @@
     background-color: white;
     border: none;
     width: 100%;
+    @include media($mobile) {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__toggle-menu {
+        background-image: url('../img/nav-open.png');
+        display: block;
+        background-color: white;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 22px;
+        border: none;
+    }
+    &__header {
+        display: none;
+        @include media($mobile) {
+            display: block;
+            padding: 30px 0;
+        }
+    }
     &__menu {
         width: fit-content;
         display: flex;
@@ -36,6 +57,17 @@
         padding-top: 35px;
         padding-bottom: 35px;
         margin: 0 auto;
+        @include media($mobile) {
+            display: none;
+        }
+        &--opened {
+            display: block;
+            padding-top: 0;
+            text-align: center;
+            .nav__item {
+                margin-top: 10px;
+            }
+        }
     }
     &__item { 
         margin: 0 20px;
