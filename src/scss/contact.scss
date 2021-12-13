@@ -5,6 +5,9 @@
     @include media($tablet) {
         padding: 50px 80px;
     }
+    @include media($mobile) {
+        padding: 50px 40px;
+    }
     &__container {
         margin: 0 auto;
         max-width: 1200px;
@@ -28,10 +31,14 @@
     }
     &__item {
         display: flex;
+        @include media($mobile) {
+            flex-direction: column;
+        }
     }
     &__heading {
         font-size: 30px;
-        margin-bottom: 25px;
+        margin: 0;
+        margin-bottom: 30px;
     }
     &__link {
         font-weight: bold;
@@ -45,6 +52,9 @@
         color: $g1;
         align-self: center;
         text-decoration: none;
+        @include media($mobile) {
+            align-self: flex-start;
+        }
         &:hover {
             color: $navy;
         }

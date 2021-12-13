@@ -6,22 +6,17 @@ var toggleMobileMenuButton = document.querySelector(".nav__toggle-menu");
 var menu = document.querySelector(".nav__menu");
 
 var isMenuOpened = false;
-var closingTimeout;
 toggleMobileMenuButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (!isMenuOpened) {
-    clearTimeout(closingTimeout)
     menu.classList.add("nav__menu--opened")
+    toggleMobileMenuButton.classList.add("nav__toggle-menu--close")
   } else {
-    // closingTimeout = setTimeout(() => 
+    toggleMobileMenuButton.classList.remove("nav__toggle-menu--close")
     menu.classList.remove("nav__menu--opened")
-    // , 800)
   }
   isMenuOpened = !isMenuOpened
 });
-
-
-
 
 
 if (quoteCarouselElement) {

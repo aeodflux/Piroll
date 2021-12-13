@@ -5,6 +5,9 @@
     @include media($tablet) {
         padding: 50px 80px;
     }
+    @include media($mobile) {
+        padding: 40px;
+    }
     &__container {
         max-width: 675px;
         margin: 0 auto;

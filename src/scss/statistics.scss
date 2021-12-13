@@ -13,6 +13,12 @@
             padding: 25px 50px;
             max-width: 768px;
         }
+        @include media($mobile) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            max-width: 320px;
+            justify-content: flex-start;
+        }
     }
     &__item {
         display: flex;
@@ -20,6 +26,9 @@
         font-size: 12px;
         @include media($tablet) {
             margin: 15px auto;
+        }
+        @include media($mobile) {
+            margin: 15px 0;
         }
     }
     &__icon {

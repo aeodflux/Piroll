@@ -21,6 +21,9 @@
             order: 2;
             width: 100%;
         }
+        @include media($mobile) {
+            padding: 30px;
+        }
     }
     &__item {
         display: flex;
@@ -56,6 +59,9 @@
     }
     &__image {
         width: 100%;
+        @include media($mobile) {
+            width: 150%;
+        }
     }
 }
 .sidebar {

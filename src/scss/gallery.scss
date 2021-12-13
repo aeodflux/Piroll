@@ -11,6 +11,9 @@
         @include media($tablet) {
             width: 50%;
         }
+        @include media($mobile) {
+            width: 100%;
+        }
     }
     &:focus {
         outline: none;

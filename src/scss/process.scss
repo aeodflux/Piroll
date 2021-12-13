@@ -15,5 +15,9 @@
             width: 500px;
             height: 250px;
         }
+        @include media($mobile) {
+            width: 200px;
+            height: 153px;
+        }
     }
 }

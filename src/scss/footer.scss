@@ -9,6 +9,9 @@
     @include media($tablet) {
         padding: 50px;
     }
+    @include media($mobile) {
+        flex-direction: column;
+    }
     &__item {
         margin: 0 auto;
         width: fit-content;
@@ -16,6 +19,9 @@
         max-width: 350px;
         @include media($tablet) {
             max-width: 120px;
+        }
+        @include media($mobile) {
+            margin: 0;
         }
     }
     &__heading {
