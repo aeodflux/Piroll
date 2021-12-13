@@ -34,7 +34,7 @@
         z-index: 2;
     }
     &__toggle-menu {
-        background-image: url('../img/nav-open.png');
+        background-image: url('./img/nav-open.png');
         display: block;
         background-color: white;
         background-repeat: no-repeat;
@@ -42,7 +42,7 @@
         height: 22px;
         border: none;
         &--close {
-            background-image: url('../img/nav-close.png');
+            background-image: url('./img/nav-close.png');
             width: 19px;
         }
     }
