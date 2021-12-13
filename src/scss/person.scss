@@ -17,6 +17,9 @@
         @include media($tablet) {
             padding: 50px 0;
         }
+        @include media($mobile) {
+            padding: 30px 10px;
+        }
     }
     &_page_work {
         background-image: none;

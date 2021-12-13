@@ -6,7 +6,7 @@
         padding: 50px 80px;
     }
     @include media($mobile) {
-        padding: 40px;
+        padding: 30px;
     }
     &__container {
         max-width: 675px;

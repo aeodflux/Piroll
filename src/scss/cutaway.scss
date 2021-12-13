@@ -4,11 +4,19 @@
     @include media($tablet) {
         padding: 50px;
     }
+    @include media($mobile) {
+        padding: 30px;
+    }
     &__container {
         margin: 0 auto;
         max-width: 600px;
     }
     &__signature {
         margin: 20px auto 0;
+    }
+    &__heading {
+        @include media($mobile) {
+            margin: 0;
+        }
     }
 }

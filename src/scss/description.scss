@@ -5,6 +5,9 @@
     @include media($tablet) {
         margin-bottom: 40px;
     }
+    @include media($mobile) {
+        margin-bottom: 15px;
+    }
     &__text {
         max-width: 475px;
         color: gray;
@@ -12,5 +15,8 @@
     }
     &__heading {
         margin-top: 0;
+        @include media($mobile) {
+            margin-bottom: 0;
+        }
     }
 }

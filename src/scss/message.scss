@@ -93,7 +93,9 @@
         @include media($mobile) {
             grid-row: 5/5;
             grid-column: 1/1;
-            width: 220px;
+            width: 100%;
+            max-width: 260px;
+            margin-top: 12px;
         }
         &:active {
             color: rgba(255, 255, 255, 0.5);

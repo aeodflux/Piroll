@@ -7,6 +7,9 @@
     @include media($tablet) {
         padding: 50px;
     }
+    @include media($mobile) {
+        padding: 30px;
+    }
     &__content {
         margin: 0 auto;
         width: 1000px;
@@ -16,8 +19,8 @@
             height: 250px;
         }
         @include media($mobile) {
-            width: 200px;
-            height: 153px;
+            width: 254px;
+            height: 144px;
         }
     }
 }
