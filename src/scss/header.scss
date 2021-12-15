@@ -11,11 +11,12 @@
         background-size: contain;
         background-repeat: no-repeat;
         @include media($tablet) {
-            background-position: center;
-            background-size: auto;
+            background-position: right;
+            background-size: 180%;
         }
         @include media($mobile) {
             padding-top: 72px;
+            background: none;
         }
     }
 }
