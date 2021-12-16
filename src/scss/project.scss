@@ -20,6 +20,7 @@
         @include media($tablet) {
             order: 2;
             width: 100%;
+            min-height: 345px;
         }
         @include media($mobile) {
             padding: 30px;

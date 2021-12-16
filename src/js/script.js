@@ -1,26 +1,28 @@
 
-var quoteCarouselElement=document.querySelector('.slogan__carousel')
-var projectCarouseElement=document.querySelector('.project__carousel')
 
-var toggleMobileMenuButton = document.querySelector(".nav__toggle-menu");
-var menu = document.querySelector(".nav__menu");
+const quoteCarouselElement=document.querySelector('.slogan__carousel')
+const projectCarouseElement=document.querySelector('.project__carousel')
 
-var isMenuOpened = false;
+const toggleMobileMenuButton = document.querySelector('.nav__toggle-menu');
+const menu = document.querySelector('.nav__menu');
+const galleryMobile = document.querySelector('.gallery_index');
+
+let isMenuOpened = false;
 toggleMobileMenuButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (!isMenuOpened) {
-    menu.classList.add("nav__menu--opened")
-    toggleMobileMenuButton.classList.add("nav__toggle-menu--close")
+    menu.classList.add('nav__menu--opened')
+    toggleMobileMenuButton.classList.add('nav__toggle-menu--close')
   } else {
-    toggleMobileMenuButton.classList.remove("nav__toggle-menu--close")
-    menu.classList.remove("nav__menu--opened")
+    toggleMobileMenuButton.classList.remove('nav__toggle-menu--close')
+    menu.classList.remove('nav__menu--opened')
   }
   isMenuOpened = !isMenuOpened
 });
 
 
 if (quoteCarouselElement) {
-  var slider = tns({
+  tns({
     container: '.slogan__carousel',
     items: 1,
     slideBy: 'page',
@@ -38,7 +40,7 @@ if (quoteCarouselElement) {
 
 
 if (projectCarouseElement) {
-  var sliderSecond = tns({
+  tns({
     container: '.project__carousel',
     items: 1,
     slideBy: 'page',
@@ -47,8 +49,43 @@ if (projectCarouseElement) {
     nav: false,
     controlsContainer: '.sidebar__menu',
     autoplayButtonOutput: false,
-    prevButton: ".sidebar__item_order_1",
-    nextButton: ".sidebar__item_order_2",
+    prevButton: '.sidebar__item_order_1',
+    nextButton: '.sidebar__item_order_2',
     startIndex: window.location.search.split('=')[1],
   });
 }
+
+if ((document.documentElement.clientWidth < 768) && (galleryMobile)) {
+  var sliderGallery = tns({
+    container: '.gallery_index',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true,
+    speed: 400,
+    nav: false,
+    controls: false,
+    autoplayButtonOutput: false,
+    startIndex: 0,
+    mouseDrag: true,
+  });
+}
+
+window.addEventListener('resize', function(event) {
+  if ((document.documentElement.clientWidth < 768) && (galleryMobile)) {
+    var sliderGallery = tns({
+      container: '.gallery_index',
+      items: 1,
+      slideBy: 'page',
+      autoplay: true,
+      speed: 700,
+      nav: false,
+      controls: false,
+      autoplayButtonOutput: false,
+      startIndex: 0,
+      mouseDrag: true,
+    });
+  }
+  if ((document.documentElement.clientWidth > 768) && (sliderGallery)) {
+    sliderGallery.destroy();
+  }
+});
